@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
 import { Product } from '../product';
-import { CommonModule } from '@angular/common';
+
+import { ProductDetailComponent } from '../product-detail/product-detail.component';
 
 @Component({
   selector: 'app-product-list',
-  imports: [CommonModule],
+  imports: [ProductDetailComponent],
   templateUrl: './product-list.component.html',
   styleUrl: './product-list.component.css',
-  standalone: true,
 })
 export class ProductListComponent {
   products: Product[] = [

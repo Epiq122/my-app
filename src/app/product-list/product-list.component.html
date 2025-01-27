@@ -25,9 +25,4 @@
     }
   </ul>
 }
-@if (selectedProduct) {
-  <p>
-    You Selected:
-    <strong>{{ selectedProduct.title }}</strong>
-  </p>
-}
+<app-product-detail [product]="selectedProduct"></app-product-detail>
