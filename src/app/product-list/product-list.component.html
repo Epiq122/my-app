@@ -26,6 +26,7 @@
   </ul>
 }
 <app-product-detail
+  #productDetail
   [product]="selectedProduct"
-  (added)="onAdded()"
+  (added)="onAdded($event)"
 ></app-product-detail>

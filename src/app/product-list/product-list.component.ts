@@ -17,8 +17,9 @@ export class ProductListComponent {
     { id: 4, title: 'Tablet' },
   ];
 
-  selectedProduct: Product | undefined;
-  onAdded() {
+  selectedProduct: Product | undefined = this.products[0];
+
+  onAdded(product: Product) {
     alert(`${this.selectedProduct?.title} added to cart`);
   }
 }
